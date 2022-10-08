@@ -1,0 +1,60 @@
+Git Lab Tutorials - 10/05/22
+GitHub Account - September 2022
+
+
+
+1.
+git commit
+hint: Waiting for your editor to close the file...
+[master b707983] Added status and temp for value to be put into
+ 2 files changed, 4 insertions(+)
+ create mode 100644 docs/status.txt
+ create mode 100644 docs/temp.txt
+
+tduff@DESKTOP-I9UAAUL MINGW64 ~/projects/assignment2 (master)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 432 bytes | 432.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/duffytyler/assignment2.git
+   132c910..b707983  master -> master
+
+2.
+8 commits
+git rev-list --all --count
+
+3.
+Wed Oct 5 14:34:30 2022 -0400
+git log -n 1 --pretty=format:%cd README.md
+
+4.
+ - They are used in order to create another line of development usually when implementing a 
+certain feature.
+ - This allows stops unstable code from being put into the main branch.
+
+5.
+    -git status is useful for getting information about the current directory that 
+is being worked on. For example changes that have been made but aren't committed yet
+    -git log is used for showing the history of the directory to see when changes and what changes
+have been made.
+6.
+    git log --follow -- Vehicle.h
+
+7.
+    git log --grep "file"
+
+8.
+    Inheritance - It is when you derive a class from another class to take attributes of the parent class
+    Polymorphism - Polymorphism occurs when an object can take on many forms 
+    Encapsulation - Encapsulation restricts the direct access to parts of an object. This is done through the use of setters and getters in classes.
+9.
+    The Dictator and Lieutenantes workflow has multiple developers on one repository and then the repositories are merged into the one the dictator controls.
+    In the Integration Manager workflow, each developer has their own 2 repositories (public and private) and the Integration manager pulls from the developers public repositories instead of merging.
+10.
+    Breaking up the repository access of 100 developers would benefit the development greatly from stopping a lot of conflicts and reducing the number of branches on the main repository.
+    The dictator would help with this a lot in diving the access into smaller repositories and handling the main repository.
+
